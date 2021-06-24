@@ -41,3 +41,11 @@ plt.title('Salary Vs Experience (Test Set)')
 plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
 plt.show()
+
+def predict_salary (list):
+  try:
+    ans=regressor.predict([list])
+  except Exception as e:
+    ans=regressor.predict(list)
+  finally:
+    print(ans)
